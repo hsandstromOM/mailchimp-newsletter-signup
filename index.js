@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('views'));
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  return res.redirect('/signup.html');
 });
 
 // var mailchimpInstance   = 'us16',
@@ -39,7 +39,7 @@ app.post('/signup', function (req, res) {
               }
           });
 });
-
+app.set('port', process.env.PORT || 8080);
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
