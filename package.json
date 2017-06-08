@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jshint/bin/jshint index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4"
   }
 }
