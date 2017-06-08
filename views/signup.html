@@ -1,28 +1,48 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Sign Up</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.25/spectre.min.css" rel="stylesheet" crossorigin="anonymous">
-    </head>
-    <body>
-        <form action="/signup" method="POST" class="centered mt-10 ml-10 mr-10">
+
+<head>
+  <title>Sign Up</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.25/spectre.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cf-4053.kxcdn.com/conversational-form/0.9.4/conversational-form.min.js" crossorigin></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-4" style="text-align:center;">
+        <div class="empty-icon">
+          <i class="icon icon-people"></i>
+        </div>
+        <h4 class="empty-title">"Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit." -Samuel L. Jackson
+</h4>
+      </div>
+      <div class="column col-4" style="text-align:center">
+        <h4>Sign Up for our newsletter</h4>
+        <div cf-context>
+          <form action="/signup" method="POST" class="centered mt-10 ml-10 mr-10" cf-form>
             <div class="form-group">
-                <label class="form-label" for="firstName">First Name</label>
-                <input class="form-input" type="text" name="firstName" id="firstName"/>
+              <label class="form-label" for="firstName">First Name</label>
+              <input class="form-input" type="text" name="firstName" id="firstName" />
             </div>
             <div class="form-group">
-                <label class="form-label" for="lastName">Last Name</label>
-                <input class="form-input" type="text" name="lastName" id="lastName"/>
+              <label class="form-label" for="lastName">Last Name</label>
+              <input class="form-input" type="text" name="lastName" id="lastName" />
             </div>
             <div class="form-group">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-input" type="email" name="email" id="email" required="true"/>
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" name="email" id="email" required="true" />
             </div>
             <div class="form-group">
-                <label class="form-label" for="message">Message</label>
-                <input class="form-input" type="text" name="message" id="message"/>
+              <label class="form-label" for="message">Message</label>
+              <input class="form-input" type="text" name="message" id="message" />
             </div>
-            <input type="submit" class="btn btn-primary" value="Submit"/>
-        </form>
-    </body>
+            <input type="submit" class="btn btn-primary" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
