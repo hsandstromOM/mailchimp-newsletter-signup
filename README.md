@@ -1,5 +1,5 @@
 # mailchimp-newsletter-signup
-https://travis-ci.org/hsandstromOM/mailchimp-newsletter-signup.svg?branch=master
+![Travis Cl](https://travis-ci.org/hsandstromOM/mailchimp-newsletter-signup.svg?branch=master)
 
 [MailChimp](https://mailchimp.com/) is a well-known email marketing SaaS product. With its generous free tier option, it's seen as the perfect solution for many startups and small businesses who want to set up and build up their mailing lists.
 
