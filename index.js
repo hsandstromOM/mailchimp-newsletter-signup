@@ -13,7 +13,7 @@ app.set('port', process.env.PORT || 5000);
 
 var server = app.listen(app.get('port'), function() {
 	var port = server.address().port;
-	console.info('Magic happens on port ${port}');
+	console.info('Magic happens on port 5000');
 });
 
 app.get('/', function (req, res) {
