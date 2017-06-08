@@ -9,13 +9,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('views'));
 
+app.set('port', process.env.PORT || 5000);
+
+var server = app.listen(app.get('port'), function() {
+	var port = server.address().port;
+	console.info(`Magic happens on port ${port}`);
+});
+
 app.get('/', function (req, res) {
   return res.redirect('/signup.html');
 });
-
-// var mailchimpInstance   = 'us16',
-//     listUniqueId        = '352a183a71',
-//     mailchimpApiKey     = '2b924b3569970fbac04b393fbc8294cf-us16';
 
 app.post('/signup', function (req, res) {
     request
@@ -38,8 +41,4 @@ app.post('/signup', function (req, res) {
                 res.send('Sign Up Failed :(');
               }
           });
-});
-app.set('port', process.env.PORT || 8080);
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
 });
