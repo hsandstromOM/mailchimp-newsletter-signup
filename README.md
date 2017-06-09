@@ -1,7 +1,7 @@
 # mailchimp-newsletter-signup
 ![Travis Cl](https://travis-ci.org/hsandstromOM/mailchimp-newsletter-signup.svg?branch=master)
 
-Adapted from https://www.codementor.io/mattgoldspink/integrate-mailchimp-with-nodejs-app-du10854xp with camel case issue resolved in the first and lastname fields as it was not getting stored in MailChimp. Also added a message field just for testing purposes.
+Adapted from https://www.codementor.io/mattgoldspink/integrate-mailchimp-with-nodejs-app-du10854xp with camel case issue resolved in the first and lastname fields as it was not getting stored in MailChimp. Also added a message field just for testing purposes and conversational-form (https://github.com/space10-community/conversational-form) for fun.
 
 [MailChimp](https://mailchimp.com/) is a well-known email marketing SaaS product. With its generous free tier option, it's seen as the perfect solution for many startups and small businesses who want to set up and build up their mailing lists.
 
